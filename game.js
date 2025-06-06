@@ -254,7 +254,9 @@ document.addEventListener("keydown", (e) => {
     jumpCount++;
   }
 });
-
+document.addEventListener("touchstart", () => {
+  jump();
+});
 document.addEventListener("keyup", (e) => {
   if (e.code === "ArrowLeft") keys.left = false;
   if (e.code === "ArrowRight") keys.right = false;
@@ -283,3 +285,4 @@ document.addEventListener("keydown", () => {
     soundReady = true;
   }
 });
+
