@@ -23,3 +23,23 @@ canvas {
   border-radius: 8px;
   cursor: pointer;
 }
+#mobile-jump-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 30%, #ccc, #888);
+  border: 3px solid #222;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mobile-jump-button {
+    display: block;
+  }
+}
