@@ -285,4 +285,16 @@ document.addEventListener("keydown", () => {
     soundReady = true;
   }
 });
+const jumpBtn = document.getElementById("mobile-jump-button");
 
+if (jumpBtn) {
+  jumpBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault(); // منع السحب
+    jump();
+  });
+
+  jumpBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    jump();
+  });
+}
